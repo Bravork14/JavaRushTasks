@@ -8,7 +8,20 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Scanner console = new Scanner(System.in);
+        int sum = 0;
+        while (true){
+            if (console.hasNextInt()){
+                int number = console.nextInt();
+                sum = sum + number;
+            } else if (console.hasNextLine()) {
+                String string = console.nextLine();
+                if (string.equals("ENTER")){
+                    System.out.println(sum);
+                    break;
+                }
+            }
+        }
 
     }
 }
