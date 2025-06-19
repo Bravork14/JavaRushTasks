@@ -8,7 +8,14 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        Scanner console = new Scanner(System.in);
+        int min = Integer.MAX_VALUE;
+        while (console.hasNextInt()) {
+            int number = console.nextInt();
+            if (number < min) {
+                min = number;
+            }
+        }
+        System.out.println(min);
     }
 }
