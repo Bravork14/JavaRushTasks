@@ -14,13 +14,12 @@ public class Solution {
         int multiple = scanner.nextInt();
 
         int sum = 0;
-        for (int i = start; i < end;i ++){
-            if (i % multiple == 0) {
-                sum = sum + i;
-            } else {
+        for (int i = start; i < end; i ++) {
+            if (i % multiple != 0) {
                 continue;
             }
+            sum += i;
         }
-        System.out.println(sum);
+            System.out.println(sum);
+        }
     }
-}
