@@ -9,7 +9,14 @@ import java.util.Scanner;
 public class Solution {
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        String s1 = scanner.nextLine();
+        String s2 = scanner.nextLine();
+        String s3 = scanner.nextLine();
+
+        System.out.println(s3 + "\n" + s2.toUpperCase() + "\n" + s1.toLowerCase());
+
+
 
     }
 }

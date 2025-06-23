@@ -8,19 +8,18 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner console = new Scanner(System.in);
-        String string = console.nextLine();
-        int number = console.nextInt();
-        if (number <= 0 || number >= 5) {
-            System.out.println(string);
-        } else {
-            int i = 0;
-            do {
-                System.out.println(string);
-                i++;
-            }
-            while (i < number);
-
-        }
+       Scanner scan = new Scanner(System.in);
+       String string = scan.nextLine();
+       int number = scan.nextInt();
+       if (number <= 0 || number >= 5) {
+           System.out.println(string);
+       } else {
+           int i = 0;
+       do {
+           System.out.println(string);
+           i++;
+       }
+       while (i < number);
+       }
     }
 }
