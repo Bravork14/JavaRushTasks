@@ -8,7 +8,10 @@ Share a Coke
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        Scanner console = new Scanner(System.in);
+        int a = console.nextInt();
+        int b = console.nextInt();
+        double c = a * 1.0 / b;
+        System.out.println(c);
     }
 }

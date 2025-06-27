@@ -26,10 +26,7 @@ public class Solution {
                 secondMin = min;
                 min = number;
             }
-
         }
-
-
         System.out.println(secondMin);
     }
 }
