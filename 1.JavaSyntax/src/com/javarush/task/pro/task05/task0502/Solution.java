@@ -10,7 +10,13 @@ public class Solution {
     public static String[] strings = new String[5];
 
     public static void main(String[] args) {
-
+        for (int i = 0; i < strings.length; i++) {
+            if (i % 2 == 0) {
+                strings[i] = EVEN;
+            } else {
+                strings[i] = ODD;
+            }
+        }
 
         System.out.print("index = 0");
         System.out.println(" value = " + strings[0]);
