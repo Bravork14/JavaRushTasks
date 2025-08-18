@@ -30,6 +30,9 @@ public class Solution {
 
     public static int toDecimal(String hexNumber) {
         int decimalNumber = 0;
+        if(hexNumber == null) {
+            return decimalNumber;
+        }
         for (int i = 0; i < hexNumber.length(); i++) {
             decimalNumber = 16 * decimalNumber + HEX.indexOf(hexNumber.charAt(i));
         }
