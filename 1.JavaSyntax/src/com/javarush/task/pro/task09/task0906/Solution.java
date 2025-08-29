@@ -28,7 +28,7 @@ public class Solution {
     }
 
     public static int toDecimal(String binaryNumber) {
-        if (binaryNumber == null && binaryNumber.isEmpty()) {
+        if (binaryNumber == null) {
             return 0;
         }
         int decimalNumber = 0;
