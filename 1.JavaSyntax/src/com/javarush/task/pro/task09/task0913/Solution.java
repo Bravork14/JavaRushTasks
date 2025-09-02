@@ -15,10 +15,12 @@ public class Solution {
     }
 
     public static int getIndexFromFirstWord(String string, String word) {
+
         return string.indexOf(word);
     }
 
     public static int getIndexFromLastWord(String string, String word) {
+
         return string.lastIndexOf(word);
     }
 }
