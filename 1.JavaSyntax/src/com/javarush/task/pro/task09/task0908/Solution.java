@@ -23,7 +23,7 @@ public class Solution {
 
         }
         String hexNumber = "";
-        for (int i = 0; i < binaryNumber.length(); i++) {
+        for (int i = 0; i < binaryNumber.length(); i += 4) {
             String oneHex = binaryNumber.substring(i, i + 4);
             String fourBit = "";
             if (oneHex.equals("0000")) {
