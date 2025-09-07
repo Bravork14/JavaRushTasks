@@ -16,16 +16,58 @@ public class Solution {
     }
 
     public static String toHex(String binaryNumber) {
+        if (binaryNumber.isEmpty() || binaryNumber == null) {
+            return "";
+        }
         if (binaryNumber.length() % 4 == 0) {
 
         }
+        String hexNumber = "";
         for (int i = 0; i < binaryNumber.length(); i++) {
-            
+            String oneHex = binaryNumber.substring(i, i + 4);
+            String fourBit = "";
+            if (oneHex.equals("0000")) {
+                fourBit = "0";
+            } else if (oneHex.equals("0001")) {
+                fourBit = "1";
+            } else if (oneHex.equals("0010")) {
+                fourBit = "2";
+            } else if (oneHex.equals("0011")) {
+                fourBit = "3";
+            } else if (oneHex.equals("0100")) {
+                fourBit = "4";
+            } else if (oneHex.equals("0101")) {
+                fourBit = "5";
+            } else if (oneHex.equals("0110")) {
+                fourBit = "6";
+            } else if (oneHex.equals("0111")) {
+                fourBit = "7";
+            } else if (oneHex.equals("1000")) {
+                fourBit = "8";
+            } else if (oneHex.equals("1001")) {
+                fourBit = "9";
+            } else if (oneHex.equals("1010")) {
+                fourBit = "a";
+            } else if (oneHex.equals("1011")) {
+                fourBit = "b";
+            } else if (oneHex.equals("1100")) {
+                fourBit = "c";
+            } else if (oneHex.equals("1101")) {
+                fourBit = "d";
+            } else if (oneHex.equals("1110")) {
+                fourBit = "e";
+            } else if (oneHex.equals("1111")) {
+                fourBit = "f";
+            }
+            hexNumber = hexNumber + fourBit;
         }
-            return null;
+        return hexNumber;
     }
 
     public static String toBinary(String hexNumber) {
+        if (hexNumber.isEmpty() || hexNumber == null) {
+            return "";
+        }
         String binaryNumber = "";
         for (int i = 0; i < hexNumber.length(); i++) {
             String oneHex = String.valueOf(hexNumber.charAt(i));
