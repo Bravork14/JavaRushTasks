@@ -15,11 +15,11 @@ public class Solution {
     }
 
     public static String toBinary(int decimalNumber) {
-        String binaryNumber = "";
         if(decimalNumber <= 0) {
             return "";
         }
 
+        String binaryNumber = "";
         while (decimalNumber != 0) {
             binaryNumber = (decimalNumber % 2) + binaryNumber;
             decimalNumber = decimalNumber / 2;
@@ -28,9 +28,10 @@ public class Solution {
     }
 
     public static int toDecimal(String binaryNumber) {
-        if (binaryNumber == null) {
+        if (binaryNumber == null || binaryNumber.isEmpty()) {
             return 0;
         }
+
         int decimalNumber = 0;
         for (int i = 0; i < binaryNumber.length(); i++) {
             char charAt = binaryNumber.charAt(binaryNumber.length() - 1 - i);
