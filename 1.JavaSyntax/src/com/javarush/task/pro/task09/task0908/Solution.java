@@ -19,7 +19,7 @@ public class Solution {
         if (binaryNumber.isEmpty() || binaryNumber == null) {
             return "";
         }
-        if (binaryNumber.length() % 4 == 0) {
+        if (binaryNumber.length() % 4 == 0){
 
         }
         String hexNumber = "";
