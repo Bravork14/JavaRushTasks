@@ -16,7 +16,11 @@ public class Solution {
 
     public static String[] getTokens(String query, String delimiter) {
         StringTokenizer tokenizer = new StringTokenizer(query,delimiter);
-        
-        return null;
+        String[] tokens = new String[tokenizer.countTokens()];
+        int i = 0;
+        while (tokenizer.hasMoreTokens()) {
+            tokens[i++] = tokenizer.nextToken();
+        }
+        return tokens;
     }
 }
