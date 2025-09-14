@@ -16,13 +16,13 @@ public class Solution {
     }
 
     public static String toHex(String binaryNumber) {
-        if (binaryNumber.isEmpty() || binaryNumber == null) {
-            return "";
+        String hexNumber = "";
+        if (binaryNumber == null) {
+            return hexNumber;
         }
         if (binaryNumber.length() % 4 == 0){
 
         }
-        String hexNumber = "";
         for (int i = 0; i < binaryNumber.length(); i += 4) {
             String oneHex = binaryNumber.substring(i, i + 4);
             String fourBit = "";
