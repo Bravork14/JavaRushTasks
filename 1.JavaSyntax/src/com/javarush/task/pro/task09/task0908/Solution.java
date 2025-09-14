@@ -16,13 +16,14 @@ public class Solution {
     }
 
     public static String toHex(String binaryNumber) {
-        String hexNumber = "";
-        if (binaryNumber == null) {
-            return hexNumber;
+        if (binaryNumber == null || binaryNumber.isEmpty() || !binaryNumber.matches("[01]+")) {
+            return "";
         }
-        if (binaryNumber.length() % 4 == 0){
+        if (binaryNumber.length() % 4 != 0){
+            binaryNumber = "0" + binaryNumber;
 
         }
+        String hexNumber = "";
         for (int i = 0; i < binaryNumber.length(); i += 4) {
             String oneHex = binaryNumber.substring(i, i + 4);
             String fourBit = "";
@@ -65,7 +66,7 @@ public class Solution {
     }
 
     public static String toBinary(String hexNumber) {
-        if (hexNumber.isEmpty() || hexNumber == null) {
+        if (hexNumber == null || hexNumber.isEmpty() || !hexNumber.matches("[0-9a-f]+")) {
             return "";
         }
         String binaryNumber = "";
