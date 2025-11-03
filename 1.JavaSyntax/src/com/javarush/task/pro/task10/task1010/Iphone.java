@@ -24,12 +24,12 @@ public class Iphone {
         if (obj == null) {
             return false;
         }
-        if (!(obj instanceof Iphone)){
+        if (!(obj instanceof Iphone)) {
             return false;
         }
         Iphone iphone = (Iphone) obj;
         return this.price == iphone.price &&
-              Objects.equals(this.model, iphone.model) &&
+                Objects.equals(this.model, iphone.model) &&
                 (this.color != null && this.color.equals(iphone.color));
     }
 
@@ -39,6 +39,5 @@ public class Iphone {
 
         System.out.println(iphone1.equals(iphone2));
     }
-
 }
 
