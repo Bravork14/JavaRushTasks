@@ -15,6 +15,6 @@ public class Solution {
     }
 
     public static void executeDefragmentation(String[] array) {
-        //напишите тут ваш код
+        1
     }
 }
